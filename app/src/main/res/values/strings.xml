@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">codecapplication</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="register">REGISTER</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="home_screen">Home Screen</string>
+</resources>
