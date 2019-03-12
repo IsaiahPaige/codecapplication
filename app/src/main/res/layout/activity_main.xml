@@ -24,7 +24,7 @@
         android:background="#ffff"
         android:hint="@string/username"
         android:autofillHints="Username"
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields,UnusedAttribute" />
     <EditText
         android:id="@+id/edittext_password"
         android:layout_width="200dp"
@@ -33,7 +33,7 @@
         android:background="#ffff"
         android:hint="@string/password"
         android:autofillHints="Password"
-        tools:ignore="TextFields" />
+        tools:ignore="TextFields,UnusedAttribute" />
 
     <Button
         android:id="@+id/button_login"
