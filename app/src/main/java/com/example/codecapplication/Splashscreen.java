@@ -7,14 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 
 public class Splashscreen extends AppCompatActivity {
 
-    private static int SPLASH_TIME = 4000; //This is 4 seconds
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
         //Code to start timer and take action after the timer ends
+        //This is 4 seconds
+        int SPLASH_TIME = 4000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
