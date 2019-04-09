@@ -1,5 +1,6 @@
 package com.example.codecapplication;
 
+import android.nfc.cardemulation.HostApduService;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,5 +24,16 @@ public class Homescreen extends AppCompatActivity {
         });
 
 
+    }
+}
+
+public class MyHostApduService extends HostApduService {
+    @Override
+    public byte[] processCommandApdu(byte[] apdu, Bundle extras) {
+       ...
+    }
+    @Override
+    public void onDeactivated(int reason) {
+       ...
     }
 }
