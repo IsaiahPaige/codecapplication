@@ -1,10 +1,6 @@
 package com.example.codecapplication;
 
-<<<<<<< HEAD
-import android.nfc.cardemulation.HostApduService;
-=======
 import android.nfc.NfcAdapter;
->>>>>>> 64e266127307f5959ef15e165d501628c96109a8
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -42,16 +38,5 @@ public class Homescreen extends AppCompatActivity {
         });
 
 
-    }
-}
-
-public class MyHostApduService extends HostApduService {
-    @Override
-    public byte[] processCommandApdu(byte[] apdu, Bundle extras) {
-       ...
-    }
-    @Override
-    public void onDeactivated(int reason) {
-       ...
     }
 }

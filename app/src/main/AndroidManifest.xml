@@ -3,16 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.codecapplication">
 
-<<<<<<< HEAD
-
-    <uses-permission android:name= "android.permission.NFC" />
-
-    <uses-feature android:name="android.hardware.nfc.hce"
-        android:required="true" />
-=======
     <uses-permission android:name="android.permission.NFC"/>
     <uses-feature android:name="android.hardware.nfc" android:required="false" />
->>>>>>> 64e266127307f5959ef15e165d501628c96109a8
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -21,21 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-<<<<<<< HEAD
-        <service
-            android:name=".HostCardEmulatorService"
-            android:exported="true"
-            android:permission="android.permission.BIND_NFC_SERVICE">
-            <intent-filter>
-                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.nfc.cardemulation.host_apdu_service"
-                android:resource="@xml/apduservice" />
-        </service>
-=======
->>>>>>> 64e266127307f5959ef15e165d501628c96109a8
         <activity android:name=".Homescreen" />
         <activity android:name=".Splashscreen" />
         <activity android:name=".RegisterActivity" />
