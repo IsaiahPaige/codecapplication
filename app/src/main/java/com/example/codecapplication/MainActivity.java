@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
        db = new DatabaseHelper(this);
-        mTextUsername = (EditText)findViewById(R.id.edittext_username);
-        mTextPassword = (EditText)findViewById(R.id.edittext_password);
-        mButtonLogin = (Button)findViewById(R.id.button_login);
-        mTextViewRegister = (TextView) findViewById(R.id.textview_register);
+        mTextUsername = findViewById(R.id.edittext_username);
+        mTextPassword = findViewById(R.id.edittext_password);
+        mButtonLogin = findViewById(R.id.button_login);
+        mTextViewRegister = findViewById(R.id.textview_register);
         mTextViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String user = mTextUsername.getText().toString().trim();
                 String pwd = mTextPassword.getText().toString().trim();
-                Boolean res = db.checkUser (user, pwd);
-                if (res == true)
+                boolean res = db.checkUser (user, pwd);
+                if (res)
                 {
                     Toast.makeText(MainActivity.this, "Successfully Logged In", Toast.LENGTH_SHORT).show();
                     openSplashscreen();
