@@ -1,6 +1,7 @@
 package com.example.codecapplication;
 
 import android.content.Intent;
+import android.nfc.NfcAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -51,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(this);
+        if (nfcAdapter!=null && nfcAdapter.isEnabled()){
+            Toast.makeText(this, "NFC Available", Toast.LENGTH_SHORT).show();
+        }
 
     }
     public void openSplashscreen(){
